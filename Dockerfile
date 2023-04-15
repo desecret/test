@@ -14,7 +14,7 @@ RUN apk add ca-certificates
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tencent.com/g' /etc/apk/repositories \
 
 # 安装python3
-&& apk add --update --no-cache python3 py3-pip \
+&& apk add --update --no-cache python3.7 py3-pip \
 && rm -rf ar/cache/apk/*
 
 
